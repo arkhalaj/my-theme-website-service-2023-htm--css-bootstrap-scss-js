@@ -1,0 +1,352 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "yekan";
+  src: url("../fonts/Yekan.eot?#") format("eot"), url("../fonts/Yekan.woff") format("woff"), url("../fonts/Yekan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IRANSansWeb.eot") format("eot"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "hekayat";
+  src: url("../fonts/hekayat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: iransans, hekayat, yekan;
+  direction: rtl;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.navbarbranding {
+  background-color: #00aeef !important;
+  background-image: url(../images/top_arrow1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+@media screen and (max-width: 991px) {
+  .navbarbranding {
+    background-image: none;
+  }
+}
+
+.navbar-nav {
+  background-color: #00aeef !important;
+  padding: 20px;
+}
+
+.active .nav-link {
+  color: black !important;
+}
+.active .nav-link:hover {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  color: black !important;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .logo {
+    padding: 20px 0px;
+  }
+}
+
+.caption-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.caption-slider p, .caption-slider a {
+  font-family: yekan;
+  text-align: center;
+  font-size: 30px;
+}
+.caption-slider p::after {
+  content: " خدمات وبسایت";
+  font-size: 4vw;
+  color: #6dbcf1;
+}
+.caption-slider a {
+  font-size: 1.5vw;
+  background-color: #6dbcf1;
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin: auto;
+}
+
+.development {
+  margin-top: 15vh;
+  min-height: 60vh !important;
+}
+
+.development-right h1::after {
+  content: "وبسایت";
+  color: #6dbcf1;
+}
+@media screen and (max-width: 767px) {
+  .development-right h1 {
+    text-align: center;
+  }
+}
+.development-right p {
+  margin-top: 50px !important;
+}
+.development-right a {
+  border: 3px solid #6dbcf1;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+.development-right a:hover {
+  background-color: #6dbcf1;
+  color: white;
+}
+
+.bg-mob {
+  min-height: 60vh;
+  background-image: url(../images/mo_bg.jpg);
+  margin-top: 50px !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.mobile-dev-right {
+  margin-top: 100px;
+}
+@media screen and (max-width: 1199px) {
+  .mobile-dev-right {
+    margin-top: 45px !important;
+  }
+}
+.mobile-dev-right h1::after {
+  content: "موبایل";
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .mobile-dev-right h1 {
+    text-align: center;
+  }
+}
+.mobile-dev-right p {
+  margin-top: 50px;
+  color: white;
+}
+@media screen and (max-width: 1399px) {
+  .mobile-dev-right p {
+    margin: 0px !important;
+  }
+}
+.mobile-dev-right a {
+  border: 3px solid white;
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1399px) {
+  .mobile-dev-right a {
+    margin-top: 25px !important;
+  }
+}
+.mobile-dev-right a:hover {
+  background-color: #6dbcf1;
+  color: black;
+  border-color: #6dbcf1;
+}
+
+.mobile-dev-left {
+  margin-top: 100px;
+}
+
+.say-clients {
+  margin-top: 100PX;
+}
+@media screen and (max-width: 767px) {
+  .say-clients h1 {
+    text-align: center;
+  }
+}
+.say-clients h1 {
+  color: #6dbcf1;
+  margin-top: 100PX;
+}
+@media screen and (max-width: 767px) {
+  .say-clients h1 {
+    text-align: center;
+  }
+}
+.say-clients h1::after {
+  content: "  چه میگویند";
+  color: black;
+}
+.say-clients P {
+  margin-top: 200PX;
+  text-align: center;
+}
+
+.Get-Quote {
+  text-align: center;
+  margin-top: 200px;
+}
+.Get-Quote h6 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+.Get-Quote span {
+  margin-top: 50px;
+  font-size: 15px;
+}
+.Get-Quote a {
+  margin-top: 50px;
+  border: 3px solid #6dbcf1;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.bg-call-back {
+  background-color: #042431;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.call-back h1 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+.call-back form {
+  margin-top: 100px !important;
+}
+.call-back form input, .call-back textarea {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid white !important;
+  color: white !important;
+  margin-top: 25px;
+}
+
+.btn-call-back {
+  border: 3px solid #6dbcf1 !important;
+  color: white;
+  display: block;
+  margin: auto;
+  width: 20vw;
+  padding: 10px 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.btn-call-back:hover {
+  color: white !important;
+  background-color: #6dbcf1 !important;
+}
+
+.footer {
+  border-top: 2px solid white;
+  margin-top: 100px;
+}
+.footer .row {
+  margin-top: 50px;
+}
+
+.subscribe input {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid white !important;
+  color: white !important;
+  margin-top: 25px;
+}
+.subscribe .btn-subscribe {
+  border: 3px solid #6dbcf1 !important;
+  color: white;
+  display: block;
+  margin: auto;
+  padding: 10px 20px;
+}
+.subscribe .btn-subscribe:hover {
+  color: white !important;
+  background-color: #6dbcf1 !important;
+}
+
+.bg-copyright {
+  background-color: #6dbcf1;
+  height: 5vh;
+}
+
+.copyright {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+  align-items: center;
+  height: 5vh;
+}
+@media screen and (max-width: 991px) {
+  .copyright {
+    justify-content: center;
+  }
+}
+.copyright a {
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: black !important;
+}
+.copyright a::before {
+  content: "  © تمامی حقوق محفوط است . طراحی شده توسط ";
+  color: black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@mixin time-transition($time-transition) {
+    transition: $time-transition;
+    -webkit-transition: $time-transition;
+    -moz-transition: $time-transition;
+    -ms-transition: $time-transition;
+    -o-transition: $time-transition;
+}
+
+@mixin border-radius($border-radius) {
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}
+
+@mixin rotate($rotate) {
+    transform: rotate($rotate);
+    -webkit-transform: rotate($rotate);
+    -moz-transform: rotate($rotate);
+    -ms-transform: rotate($rotate);
+    -o-transform: rotate($rotate);
+}
+
+@mixin translate($translate) {
+    transform: translate($translate);
+    -webkit-transform: translate($translate);
+    -moz-transform: translate($translate);
+    -ms-transform: translate($translate);
+    -o-transform: translate($translate);
+}
+
+@mixin box-shadow ($box-shadow) {
+    box-shadow: $box-shadow;
+}
+@mixin text-shadow ($text-shadow...){
+    text-shadow: $text-shadow;
+}
+@mixin flex-right($flex-right...){
+    display: flex;
+    justify-content: flex-start;
+}
+@mixin flex-left($flex-left...){
+    display: flex;
+    justify-content: flex-end;
+}
+@mixin flex-center($flex-left...){
+    display: flex;
+    justify-content: center;
+}
